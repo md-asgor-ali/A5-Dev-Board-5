@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A5-Dev-Board-5</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Tailwindcss cdn -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        body{
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#f4f7ff]" id="body">
+    <header class="container mx-auto bg-white p-7 my-6 rounded-2xl">
+        <nav class="flex justify-between">
+            <!-- logo -->
+            <div class="flex justify-center items-center gap-3">
+                <div>
+                    <img src="assets/logo.png" alt="logo">
+                </div>
+                <div>
+                    <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
+                </div>
+            </div>
+
+            <!-- button -->
+            <div>
+                <button id="back-to-desk" class="bg-[#3752FD] text-white px-5 py-2 rounded-lg mt-4 complete-btn cursor-pointer">Back to Desk</button>
+            </div>
+    </nav>
+    </header>
+
+    <h1 class="text-center text-4xl font-medium">Blogs</h1>
+    <!-- Question section -->
+    <section class="container mx-auto mb-12">
+
+        <div class="bg-white rounded-2xl p-5 mt-6">
+            <h1 class="font-semibold text-2xl border-b-1 border-dashed border-gray-200 pb-3">Question-1: What are the different ways ot select an element in the DOM?</h1>
+            <p class="mt-4">In JavaScript, there are several ways to select elements in the DOM (Document Object Model). 1.getElementById() – select an element by id. 2.getElementsByName() – select elements by name. 3.getElementsByTagName()  – select elements by a tag name. 4.getElementsByClassName() – select elements by one or more class names. 5.querySelector()  – select elements by CSS selectors.
+            </p>
+        </div>
+        <div class="bg-white rounded-2xl p-5 mt-6">
+            <h1 class="font-semibold text-2xl border-b-1 border-dashed border-gray-200 pb-3">Question-2: What is the difference between innerHTML, innerText, and textContent? </h1>
+            <p class="mt-4">The innerHTML, innerText, and textContent properties in JavaScript are used to access or modify the content of an HTML element.  1. innerHTML:innerHTML returns or sets the HTML content inside an element, including all HTML tags and text. 2. innerText:innerText returns or sets the visible text content of an element, excluding any HTML tags. 3. textContent: textContent returns or sets the text content of an element, including all child nodes, but excludes HTML tags.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-5 mt-6">
+            <h1 class="font-semibold text-2xl border-b-1 border-dashed border-gray-200 pb-3">Question-3: What is event delegation in the DOM?</h1>
+            <p class="mt-4">Event delegation in the DOM is a technique where I can attach a single event listener to a parent element, rather than attaching individual event listeners to each of its child elements. This allows the parent element to handle events that occur on its descendants</p>
+        </div>
+        <div class="bg-white rounded-2xl p-5 mt-6">
+            <h1 class="font-semibold text-2xl border-b-1 border-dashed border-gray-200 pb-3">Question-4: What is event bubbling in the DOM?</h1>
+            <p class="mt-4">In the Document Object Model (DOM), "event bubbling" refers to a phase in the event propagation process where an event, once triggered on a specific element, "bubbles up" through its ancestor elements in the DOM tree.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-5 mt-6">
+            <h1 class="font-semibold text-2xl border-b-1 border-dashed border-gray-200 pb-3">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <p class="mt-4">JavaScript provides powerful tools for dynamically manipulating the DOM (Document Object Model), allowing us to create, add, and remove HTML elements.</p>
+        </div>
+
+
+    </section>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
