@@ -29,15 +29,15 @@ const completeBtns = document.getElementsByClassName('complete-btn');
 for (let btn of completeBtns) {
     btn.addEventListener('click', function () {
         alert('Board updated successfully');
-        let assignTasksElement = document.getElementById('task-assign');
-        let assignTasks = parseInt(assignTasksElement.innerText);
+        let assignTasksNum = document.getElementById('task-assign');
+        let assignTasks = parseInt(assignTasksNum.innerText);
 
         let checkBtn = document.getElementById('check-btn');
         let convertedCheckBtn = parseInt(checkBtn.innerText);
 
         if (assignTasks > 0) {
             assignTasks--;
-            assignTasksElement.innerText = assignTasks;
+            assignTasksNum.innerText = assignTasks;
 
             convertedCheckBtn++;
             checkBtn.innerText = convertedCheckBtn;
