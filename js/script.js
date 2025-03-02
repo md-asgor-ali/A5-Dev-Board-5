@@ -48,23 +48,25 @@ for (let btn of completeBtns) {
             const now = new Date();
             const timeString = now.toLocaleTimeString(); 
 
-            for (let taskCard = btn.parentElement; taskCard; taskCard = taskCard.parentElement) {
-                if (taskCard.classList.contains('rounded-2xl')) {
+            
+            const taskCard = btn.closest('.rounded-2xl');
 
-                    const taskName = taskCard.querySelector('h1').innerText;
+            if (taskCard) {
+                
+                const taskName = taskCard.querySelector('h1').innerText;
 
-                    const activityLog = document.createElement('div');
-                    activityLog.className = 'bg-[#f4f7ff] rounded-2xl p-3 mt-7';
-                    activityLog.innerHTML = `<p>You have completed the task ${taskName} at ${timeString}</p>`;
+                
+                const activityLog = document.createElement('div');
+                activityLog.className = 'bg-[#f4f7ff] rounded-2xl p-3 mt-7';
+                activityLog.innerHTML = `<p>You have completed the task ${taskName} at ${timeString}</p>`;
 
-                    const activityContainer = document.getElementById('activity');
-                    activityContainer.appendChild(activityLog);
-                    break; 
-                }
+                
+                const activityContainer = document.getElementById('activity');
+                activityContainer.appendChild(activityLog);
             }
 
             if (assignTasks === 0) {
-                alert("Congratulations!!! You Have Done All The Tasks.");
+                alert("Congratulations!!! You Have Completed All The Current Task.");
             }
         } else {
             alert("No tasks left to complete!");
@@ -83,15 +85,15 @@ clearHistoryBtn.addEventListener('click', function () {
     alert('Activity history cleared successfully!');
 });
 
-
+// switch page section
 document.getElementById('discover-new').addEventListener('click', function () {
-    window.location.href = 'question.html';
+    window.location.href = '/A5-Dev-Board-5/question.html';
     alert('hi')
 
 });
 
 document.getElementById('back-to-desk').addEventListener('click', function () {
-    window.location.href = 'index.html';
+    window.location.href = '/A5-Dev-Board-5/index.html';
     alert('hi')
 });
 
