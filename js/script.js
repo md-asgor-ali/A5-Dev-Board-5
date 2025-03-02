@@ -68,27 +68,22 @@ for (let btn of completeBtns) {
             if (assignTasks === 0) {
                 alert("Congratulations!!! You Have Completed All The Current Task.");
             }
-        } else {
-            alert("No tasks left to complete!");
-        }
+        } 
     });
 }
+
+
 
 const clearHistoryBtn = document.getElementById('clear-history-btn');
 clearHistoryBtn.addEventListener('click', function () {
     const activityContainer = document.getElementById('activity');
-
-    while (activityContainer.firstChild) {
-        activityContainer.removeChild(activityContainer.firstChild);
-    }
-
-    alert('Activity history cleared successfully!');
+    activityContainer.innerHTML = '';
 });
 
-// switch page section
+
 document.getElementById('discover-new').addEventListener('click', function () {
     window.location.href = 'question.html';
-    alert('hi')
+    
 
 });
 
