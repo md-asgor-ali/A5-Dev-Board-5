@@ -87,14 +87,11 @@ clearHistoryBtn.addEventListener('click', function () {
 
 // switch page section
 document.getElementById('discover-new').addEventListener('click', function () {
-    window.location.href = '/A5-Dev-Board-5/question.html';
+    window.location.href = 'question.html';
     alert('hi')
 
 });
 
-document.getElementById('back-to-desk').addEventListener('click', function () {
-    window.location.href = '/A5-Dev-Board-5/index.html';
-    alert('hi')
-});
+
 
 
